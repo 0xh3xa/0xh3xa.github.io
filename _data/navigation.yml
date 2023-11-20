@@ -1,9 +1,22 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "Home"
+    url: /index.html
   - title: "About"
     url: /about/
+  - title: "Defensive"
+    url: /defensive/
+  - title: "Offensive"
+    url: /offensive/
+  # - title: "CTF"
+  #   url: /ctf/    
+  - title: "Linux"
+    url: /linux/  
+  - title: "Devops"
+    url: /devops/  
+  - title: "Certificates"
+    url: /certificates/
+  # - title: "Portfolio"
+  #   url: /portfolio/
+  - title: "Archive"
+    url: /year-archive/
+
