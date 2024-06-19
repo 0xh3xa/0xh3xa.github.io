@@ -11,15 +11,16 @@ classes: wide
 *`Security`*
 ==========
 
-### eLearnSecurity Certified Malware Analysis Professional eCMAP [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
+### eLearnSecurity Certified Mobile Application Penetration Tester eMAPT [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
-- Run a malware and tracking its activity 
-- Reverse Engineering and/or unpacking malware
-- Ability to debug malware step-by-step
-- Identify how the malware achieves obfuscation
-- Identify C2 channels and what they are used for
-- Bypass anti-analysis techniques
-- Locate and analyze dropped and downloaded malware as well as persistence mechanisms
+- Information Gathering
+- Reverse engineering Android applications
+- Exploit Android vulnerabilities
+- Applied security principles
+- Logic flaws
+- Exploit development for Android environments
+- Encryption and cryptography
+- Identify vulnerable implementations
 
 ----------------------------------------
 
@@ -34,6 +35,16 @@ classes: wide
 - Exploiting hardened hosts and overcoming limitations
 
 ----------------------------------------
+
+### eLearnSecurity Certified Malware Analysis Professional eCMAP [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
+
+- Run a malware and tracking its activity 
+- Reverse Engineering and/or unpacking malware
+- Ability to debug malware step-by-step
+- Identify how the malware achieves obfuscation
+- Identify C2 channels and what they are used for
+- Bypass anti-analysis techniques
+- Locate and analyze dropped and downloaded malware as well as persistence mechanisms
 
 <br/>
 
