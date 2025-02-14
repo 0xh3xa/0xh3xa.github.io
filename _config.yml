@@ -39,8 +39,10 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-#comments:
-#  provider               : disqus #false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+comments:
+  provider               : disqus #"disqus" #false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : 0xh3xa # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
 include:
   - _pages
@@ -56,9 +58,6 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-disqus:
-  shortname            : 0xh3xa
 
 # Plugins (previously gems:)
 plugins:
