@@ -7,17 +7,11 @@ classes: wide
 date: November 20, 2023
 ---
 
-<p style="text-align: justify;">
-I am currently pursuing a Master's degree in Computer Science, specializing in researching malware detection using Deep Learning, Machine Learning, and other AI categories. My online alias is `test`, and this blog serves as a record of my journey in cybersecurity, detailing projects, and providing various HOWTOs related to security.
-</p>
+I am currently pursuing a Master's degree in Computer Science, specializing in researching malware detection using Deep Learning, Machine Learning, and other AI categories. My online alias is `0xh3xa`, and this blog serves as a record of my journey in cybersecurity, detailing projects, and providing various HOWTOs related to security.
 
-<p style="text-align: justify;">
 I’m passionate about Cyber Security and Lower-level programming, OS Kernel, UEFI programming, Software Engineering/Development. Since Reverse Engineering, Exploit Development, and Malware Analysis are at the intersection of Software Engineering/Development, I decided to start security endeavors on these aspects.
-</p>
 
-<p style="text-align: justify;">
 Previously I was working as a software engineer involved in full-stack development and cloud activities. However, I found myself bogged down by monotonous and repetitive tasks, lacking the excitement and depth I craved from core computer science concepts like OS kernel, database engines, optimizations, etc. This led me to redirect my interests towards security, low-level programming, and crafting solutions/services for developers. I discovered immense joy in delving into security, and operating systems, constantly learning and exploring new things. I started my journey in security and low-level and this blog to record my journey and other cool stuff.
-</p>
 
 My skills encompass expertise in Reverse Engineering, Exploit Development, Malware Analysis, as well as proficiency in tools such as `IDA Pro`, `Ghidra`, `x64Dbg`, `gdb`, `jadx`, etc.
 
