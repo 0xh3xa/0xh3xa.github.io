@@ -3,7 +3,7 @@ title: "How can I configure a GitHub Action to run at midnight whenever there ar
 classes: wide
 header:
   teaser: /assets/images/thumbnail/post-thumbnail.jpg
-excerpt: "Introduction to Java Record JDK-14"
+excerpt: "GitHub Action Scheduler"
 categories:
     - Devops
 tags:
