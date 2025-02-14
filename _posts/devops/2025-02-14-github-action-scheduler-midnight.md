@@ -1,5 +1,5 @@
 ---
-title: "How can I configure a GitHub Action to run at midnight whenever there are changes on a branch?"
+title: "How do I schedule a GitHub Action to run at midnight on branch changes?"
 classes: wide
 header:
   teaser: /assets/images/thumbnail/post-thumbnail.jpg
