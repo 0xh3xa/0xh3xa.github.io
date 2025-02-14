@@ -21,7 +21,7 @@ locale                   : "en-US"
 title                    : ""
 author                   : "0xh3xa"
 title_separator          : "|"
-email: "0xh3xa@gmail.com"
+email: ""
 description:
   "blog about my journey into Security, Low-level programming, and OS Kernel"
 twitter_username: 0xh3xa
@@ -72,7 +72,7 @@ author:
   name   : "0xh3xa"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Passionate software engineer enamored with security, low-level programming, and OS kernel."
-  email  : "0xh3xa@gmail.com"
+  email  : ""
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
