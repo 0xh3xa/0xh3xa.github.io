@@ -45,13 +45,13 @@ jobs:
 
 To verify if changes have occurred, add the following condition. It checks for any commits made in the past 24 hours relative to the last deployment:
 
-```sh
+```
 test -z "$(git rev-list --after="24 hours" ${{ github.sha }})"
 ```
 
 As an example, here's a GitHub Action that runs every midnight (UTC). It checks for any commits made in the last 24 hours, and if new changes are found, the code-build job will be triggered.
 
-```yaml
+```
 name: Deploy to production
 
 on:
