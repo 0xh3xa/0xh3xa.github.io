@@ -51,7 +51,7 @@ test -z "$(git rev-list --after="24 hours" ${{ github.sha }})"
 
 As an example, here's a GitHub Action that runs every midnight (UTC). It checks for any commits made in the last 24 hours, and if new changes are found, the code-build job will be triggered.
 
-```sh
+```yaml
 name: Deploy to production
 
 on:
