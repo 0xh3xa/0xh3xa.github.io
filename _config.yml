@@ -19,13 +19,15 @@ minimal_mistakes_skin: default
 # in the templates via {{ site.myvariable }}.
 locale                   : "en-US"
 title                    : ""
+author                   : "0xh3xa"
 title_separator          : "|"
-email: "0xh3xa@gmail.com"
-description: >- # this means to ignore newlines until "baseurl:"
-  "Blogging about my journey into Security, Low-level programming, and OS Kernel"
+email: ""
+description:
+  "blog about my journey into Security, Low-level programming, and OS Kernel"
 twitter_username: 0xh3xa
 github_username: 0xh3xa
-url: 0xh3xa.github.io
+baseurl: ""
+url: "https://0xh3xa.github.io"
 search: true
 
 # Build settings
@@ -33,12 +35,12 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 comments:
-  provider               : disqus #false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : disqus #"disqus" #false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : 0xh3xa # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
@@ -48,9 +50,9 @@ include:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  - Gemfile
+  - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
@@ -70,11 +72,11 @@ author:
   name   : "0xh3xa"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Passionate software engineer enamored with security, low-level programming, and OS kernel."
-  email  : "0xh3xa@gmail.com"
+  email  : ""
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://0xh3xa.github.io/"
+      url: "https://0xh3xa.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/0xh3xa"
