@@ -22,31 +22,31 @@ In addition to UPX packer, other packers could be commercials and close sources 
 
 ### How to pack the sample using the UPX packer?
 
-You can download it from the GitHub repo https://github.com/upx/upx/releases and select the appropriate one for your operating system.
+You can download it from the GitHub repo [https://github.com/upx/upx/releases](https://github.com/upx/upx/releases) and select the appropriate one for your operating system.
 
 After you download the UPX, you can open the Unix-like systems terminal or Windows command prompt (cmd).
 
 Open the terminal  and type 
 
-```cmd
+```shell
 up --help
 ```
 
 I have a small C program that prints "Hello World!" with the name "hello.c" and I want to use the UPX to pack it.
 
-First I will compile it and output the exe file, using the following command, I am using the MSVC compiler, more info: https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170#find-a-compiler-option
+First I will compile it and output the exe file, using the following command, I am using the MSVC compiler, more info: [https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170#find-a-compiler-option](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170#find-a-compiler-option)
 
-```cmd
+```shell
 cl -o 
 ```
 
 After that, I will pack the sample using the following command
 
-```cmd
+```shell
 upx hello.exe -o hello-packed.exe 
 ```
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/create.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/create.png)
 
 
 ### Compare the packed vs. unpacked sample
@@ -54,11 +54,11 @@ upx hello.exe -o hello-packed.exe
 
 Let's see the file size and Portable Executable (PE) metadata of unpacked compared to packed files.
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/compile.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/compile.png)
 
 Now I open the two files with PeStudio for PE analyzing, let's move to sections and imports.
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/iat.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/iat.png)
 
 As shown in the image below the packed has different section names (UPX0, UPX1, .rsrc) unlike the unpacked one (.text,.data, .rdata).
 
@@ -69,11 +69,11 @@ Different tools help you to identify the packer exist one of them Detect-it-easy
 
 Here Detect-it-easy identify it and PeID
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/info.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/info.png)
 
 , But what are general things to keep in consideration when identifying the packer exists:
 
-1. Entropy value (entropy is a value that measures the randomness and compression), if you check the entropy value of some sections you will find it `>= 7.0`  compared with others which unpacked with `< 7.0`
+1. Entropy value (entropy is a value that measures the randomness and compression), if you check the entropy value of some sections you will find it `>=7.0`  compared with others which unpacked with `<7.0`
 
 2. Sections' names, the default for the compiler to use `.text`, `.data`, `.rdata`, etc. But in UPX case there are `UPX0`, `UPX1`, etc.
 
@@ -82,20 +82,21 @@ Here Detect-it-easy identify it and PeID
 4. Checking the imports with PeStudio or CFF-Explorer, you will find fewer functions are referenced.
 
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/entropy.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/entropy.png)
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/sections.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/sections.png)
+
 
 |Function|MSDN Documentation|
 |--------|------------------|
-|`VirtualAlloc`|https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc|
-|`VirtualAllocEX`|https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualallocex|
-|`VirtualProtect`|https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualprotect|
-|`VirtualProtectEx`|https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualprotectex|
+|`VirtualAlloc`|[https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc](https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc)|
+|`VirtualAllocEX`|[https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualallocex](https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualallocex)|
+|`VirtualProtect`|[https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualprotect](https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualprotect)|
+|`VirtualProtectEx`|[https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualprotectex](https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualprotectex)|
 
 5. Tail jump, which is used by the stub to jump to the virtual address at the unpacked entry point. This tail jump you will identify if you open the sample into the IDA disassembler, there is no existing `ret` instruction.
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/tail.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/tail.png)
 
 ### How to unpack the UPX sample?
 
@@ -103,7 +104,7 @@ Two options are using the command line and other manually using the xDbg debugge
 
 Let's start by using the command line first
 
-```cmd
+```shell
 upx -d hello-packed.exe --o hello-unpacked.exe
 ```
 
@@ -114,11 +115,11 @@ Moving to the breakpoints tab, you will find breakpoints at the `ntdll.dll` and 
 
 Find the tail jump that could be found using the Graph by pressing `g` and scrolling down until find it or by converting the address from IDA into xDbg.
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/tail.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/tail.png)
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/pushad.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/pushad.png)
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/jmp.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/jmp.png)
 
 Once you find it, press `F2` to create a breakpoint then run `F8` for stepping over and continue running. The breakpoint will hit press `F7` to step into.
 
@@ -133,14 +134,14 @@ It points to the address of the entry point which we are stop there. Click on  I
 
 At the points there are some missing in the alignments, rather than do it manually you can use Scylla by clicking Fix dump which will extract dump_SCY.
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/scylla.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/scylla.png)
 
 
 Open the dump_SCY using the IDA and check the imports tab and the graph view, here is the call for the `printf()` function and print `Hello World!`
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/unpacked.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/unpacked.png)
 
 
 If you now check the import functions you will see more referenced functions.
 
-![error loading image](/assets/images/reverse_engineering/unpack-upx/modules.png)
+![loading image](/assets/images/posts/reversing/unpack-upx/modules.png)

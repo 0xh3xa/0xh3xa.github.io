@@ -9,28 +9,42 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 .author__avatar img {
-    max-width: 200px;
+  max-width: 200px;
+}
+
+:root {
+    --bg-soft-yellow: #FFF9C4;
+    --bg-pastel-blue: #E0F7FA;
+    --bg-light-green: #E8F5E9;
+    --bg-pale-peach: #FFEFD5;
+    --bg-misty-rose: #FFE4E1;
+    --bg-soft-lavender: #F3E5F5;
+    --bg-cream: #FFFDD0;
+    --bg-light-turquoise: #E0FFFF;
+    --bg-linen: #FAF0E6;
+    --bg-light-gray: #F5F5F5;
 }
 
 .language-plaintext {
-    background: #E0F7FA !important;
+  background: var(--bg-misty-rose) !important;
+  font-family: "Fira Code", "Source Code Pro", "Consolas", monospace;
 }
 
 .certificate-badge {
-    width: 200px;
-    height: 180px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 0 12px rgba(52, 152, 219, 0.3);
-    border-radius: 50%;
+  width: 200px;
+  height: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 0 12px rgba(52, 152, 219, 0.3);
+  border-radius: 50%;
 }
 
 .red-team {
-    border: 3px solid #e74c3c !important;
+  border: 3px solid #e74c3c !important;
 }
 
 .blue-team {
-    border: 3px solid #3498db !important;
+  border: 3px solid #3498db !important;
 }
 
 .devops {
-    border: 3px solid #CCCCCC !important;
+  border: 3px solid #cccccc !important;
 }
