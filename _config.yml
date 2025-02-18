@@ -23,7 +23,8 @@ author                   : "0xh3xa"
 title_separator          : "|"
 email: ""
 description:
-  "blog about my journey into Security, Low-level programming, and OS Kernel"
+  "My Odyssey Through Cyber Security, Low-Level Programming, and OS Kernel Development"
+
 twitter_username: 0xh3xa
 github_username: 0xh3xa
 baseurl: ""
@@ -71,8 +72,8 @@ plugins:
 author:
   name   : "0xh3xa"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Passionate software engineer enamored with security, low-level programming, and OS kernel."
-  email  : ""
+  bio    : "System engineer relentlessly innovating at the intersection of cybersecurity, low-level programming, and OS kernel design."
+  email  : "0xh3xa@gmail.com"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -115,12 +116,12 @@ defaults:
       share: true
       related: true
   # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
+  # - scope:
+  #     path: "_pages"
+  #     type: pages
+  #   values:
+  #     layout: single
+  #     author_profile: true
       
 collections:
   portfolio:
@@ -139,3 +140,8 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

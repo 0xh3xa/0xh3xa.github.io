@@ -1,6 +1,5 @@
 ---
 title: "How do I schedule a GitHub Action to run at midnight on branch changes?"
-classes: wide
 header:
   teaser: /assets/images/thumbnail/post-thumbnail.jpg
 excerpt: "GitHub Action Scheduler"
@@ -9,6 +8,7 @@ categories:
 tags:
     - GitHub Actions
 toc: true
+toc_sticky: true
 toc_label: "Content"
 date: February 14, 2025
 ---
@@ -45,13 +45,16 @@ jobs:
 
 To verify if changes have occurred, add the following condition. It checks for any commits made in the past 24 hours relative to the last deployment:
 
+{% raw %}
 ```sh
 test -z "$(git rev-list --after="24 hours" ${{ github.sha }})"
 ```
+{% endraw %}
 
 As an example, here's a GitHub Action that runs every midnight (UTC). It checks for any commits made in the last 24 hours, and if new changes are found, the code-build job will be triggered.
 
-```sh
+{% raw %}
+```yaml
 name: Deploy to production
 
 on:
@@ -102,4 +105,4 @@ jobs:
           npm ci
           npm run build
 ```
-
+{% endraw %}

@@ -1,6 +1,5 @@
 ---
 title: "What Is a Java Record?"
-classes: wide
 header:
   teaser: /assets/images/thumbnail/post-thumbnail.jpg
 excerpt: "Introduction to Java Record JDK-14"
@@ -9,6 +8,7 @@ categories:
 tags:
     - Java
 toc: true
+toc_sticky: true
 toc_label: "Content"
 date: July 27, 2020
 ---
@@ -43,7 +43,7 @@ From Java 14 you declare the records with a keyword `record`
 public record Author(int id, String name) { }
 ```
 
-#### Usage
+**Usage**
 
 ```java
 

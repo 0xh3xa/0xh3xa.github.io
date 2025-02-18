@@ -1,6 +1,5 @@
 ---
 title: "How to grant Tomcat 9 access on other files"
-classes: wide
 header:
   teaser: /assets/images/thumbnail/post-thumbnail.jpg
 categories:
@@ -9,6 +8,7 @@ tags:
     - Tomcat
     - Configuration
 toc: true
+toc_sticky: true
 toc_label: "Content"
 date: August 08, 2020
 ---
@@ -17,7 +17,7 @@ date: August 08, 2020
 
 Sometime you will need to access files from the tomcat either the in the same directory or other directories. This need to configure from Linux side without any configuration to the Tomcat 
 
-#### Steps
+## Command Steps
 
 Add the tomcat to a group and grant this group to the required access to that files, by creating a group called `webserver`. Then restart tomcat and try again
 
