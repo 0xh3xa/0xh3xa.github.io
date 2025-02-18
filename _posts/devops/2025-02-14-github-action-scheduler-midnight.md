@@ -1,6 +1,5 @@
 ---
 title: "How do I schedule a GitHub Action to run at midnight on branch changes?"
-classes: wide
 header:
   teaser: /assets/images/thumbnail/post-thumbnail.jpg
 excerpt: "GitHub Action Scheduler"
@@ -9,6 +8,7 @@ categories:
 tags:
     - GitHub Actions
 toc: true
+toc_sticky: true
 toc_label: "Content"
 date: February 14, 2025
 ---

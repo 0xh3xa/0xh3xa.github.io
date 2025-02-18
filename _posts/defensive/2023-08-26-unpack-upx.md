@@ -1,6 +1,5 @@
 ---
 title: "Unpacking UPX packer"
-classes: wide
 header:
   teaser: /assets/images/thumbnail/post-thumbnail.jpg
 ribbon: DodgerBlue
@@ -11,8 +10,11 @@ categories:
 tags:
   - Reverse Engineering
 toc: true
+toc_sticky: true
+date: August 26, 2023
 ---
 
+### What is UPX packer?
 
 UPX is an open-source, free, secure, portable, extendable, high-performance executable packer for several executable formats.
 
@@ -36,7 +38,7 @@ I have a small C program that prints "Hello World!" with the name "hello.c" and 
 
 First I will compile it and output the exe file, using the following command, I am using the MSVC compiler, more info: [https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170#find-a-compiler-option](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170#find-a-compiler-option)
 
-```shell
+```console
 cl -o 
 ```
 
@@ -50,7 +52,6 @@ upx hello.exe -o hello-packed.exe
 
 
 ### Compare the packed vs. unpacked sample
-
 
 Let's see the file size and Portable Executable (PE) metadata of unpacked compared to packed files.
 
@@ -109,7 +110,6 @@ upx -d hello-packed.exe --o hello-unpacked.exe
 ```
 
 Now let's start by using it manually using the xDbg debugger, I will open xDbg64 as the sample is 64-bit
-
 
 Moving to the breakpoints tab, you will find breakpoints at the `ntdll.dll` and entry point of the sample, press `F9` to run and stop at the entry points.
 
