@@ -11,10 +11,9 @@ classes: wide
 *`Security`*
 ==========
 
-<img src="../assets/images/certificates/eMAPT_badge.png" alt="eLearnSecurity Certified Mobile Application Penetration Tester eMAPT Badge" width="200" height="180" style="border-radius: 50%; border: 3px solid #e74c3c; background-color:white;"  /> 
-<img src="../assets/images/certificates/eCXD_badge.png" alt="eLearnSecurity Certified Exploit Developer eCXD Badge" width="200" height="180" style="border-radius: 50%; border: 3px solid #e74c3c; background: white;" /> 
-<img src="../assets/images/certificates/eCMAP_badge.png" alt="eLearnSecurity Certified Malware 
-Analysis Professional eCMAP Badge" width="200" height="180" style="border-radius: 50%; border: 3px solid #3498db; background: white;" /> 
+<img src="../assets/images/certificates/eMAPT_badge.png" alt="eLearnSecurity Certified Mobile Application Penetration Tester eMAPT Badge" style="border-radius: 50%; border: 3px solid #e74c3c; background-color:white; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);"  /> 
+<img src="../assets/images/certificates/eCXD_badge.png" alt="eLearnSecurity Certified Exploit Developer eCXD Badge" style="border-radius: 50%; border: 3px solid #e74c3c; background: white; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);" /> 
+<img src="../assets/images/certificates/eCMAP_badge.png" alt="eLearnSecurity Certified Malware Analysis Professional eCMAP Badge" style="border-radius: 50%; border: 3px solid #3498db; background: white; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);" />
 
 ### eLearnSecurity Certified Mobile Application Penetration Tester eMAPT [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
@@ -57,8 +56,8 @@ Analysis Professional eCMAP Badge" width="200" height="180" style="border-radius
 =======
 
 
-<img src="../assets/images/certificates/rhcsa_badge.jpg" alt="Red Hat Certified Linux Administrator Badge" width="200" height="180" style="border-radius: 50%;" /> 
-<img src="../assets/images/certificates/rhce_badge.jpg" alt="Red Hat Certified Linux Engineer Badge" width="200" height="180" style="border-radius: 50%;"  /> 
+<img src="../assets/images/certificates/rhcsa_badge.jpg" alt="Red Hat Certified Linux Administrator Badge" style="border-radius: 50%; border: 3px solid #3498db; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);" /> 
+<img src="../assets/images/certificates/rhce_badge.jpg" alt="Red Hat Certified Linux Engineer Badge" style="border-radius: 50%; border: 3px solid #3498db; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);"  /> 
 
 ### Red Hat Certified Linux Administrator [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
