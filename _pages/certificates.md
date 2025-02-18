@@ -10,9 +10,9 @@ classes: wide
 
 ## <u>Cyber Security</u>
 
-<img src="../assets/images/certificates/eMAPT_badge.png" alt="eLearnSecurity Certified Mobile Application Penetration Tester eMAPT Badge" style="border-radius: 50%; border: 3px solid #e74c3c; background-color:white; width: 200px; height: 190px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);"  /> 
-<img src="../assets/images/certificates/eCXD_badge.png" alt="eLearnSecurity Certified Exploit Developer eCXD Badge" style="border-radius: 50%; border: 3px solid #e74c3c; background: white; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);" /> 
-<img src="../assets/images/certificates/eCMAP_badge.png" alt="eLearnSecurity Certified Malware Analysis Professional eCMAP Badge" style="border-radius: 50%; border: 3px solid #3498db; background: white; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);" />
+<img src="../assets/images/certificates/eMAPT_badge.png" alt="eLearnSecurity Certified Mobile Application Penetration Tester eMAPT Badge" class="certificate-badge red-team"  style="height:190px;"/> 
+<img src="../assets/images/certificates/eCXD_badge.png" alt="eLearnSecurity Certified Exploit Developer eCXD Badge" class="certificate-badge red-team" /> 
+<img src="../assets/images/certificates/eCMAP_badge.png" alt="eLearnSecurity Certified Malware Analysis Professional eCMAP Badge" class="certificate-badge blue-team" />
 
 ### eLearnSecurity Certified Mobile Application Penetration Tester eMAPT [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
@@ -25,7 +25,7 @@ classes: wide
 - Encryption and cryptography
 - Identify vulnerable implementations
 
-----------------------------------------
+---
 
 ### eLearnSecurity Certified Exploit Developer eCXD [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
@@ -37,11 +37,11 @@ classes: wide
 - Bypassing modern anti-exploit mechanisms (ASLR/PIE, Stack Cookie, NX/DEP, RELRO etc.)
 - Exploiting hardened hosts and overcoming limitations
 
-----------------------------------------
+---
 
 ### eLearnSecurity Certified Malware Analysis Professional eCMAP [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
-- Run a malware and tracking its activity 
+- Run a malware and tracking its activity
 - Reverse Engineering and/or unpacking malware
 - Ability to debug malware step-by-step
 - Identify how the malware achieves obfuscation
@@ -53,23 +53,23 @@ classes: wide
 
 ## <u>DevOps</u>
 
-<img src="../assets/images/certificates/rhcsa_badge.jpg" alt="Red Hat Certified Linux Administrator Badge" style="border-radius: 50%; border: 3px solid #CCCCCC; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);" /> 
-<img src="../assets/images/certificates/rhce_badge.jpg" alt="Red Hat Certified Linux Engineer Badge" style="border-radius: 50%; border: 3px solid #CCCCCC; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);"  /> 
-<img src="../assets/images/certificates/oca_badge.png" alt="Red Hat Certified Linux Engineer Badge" style="border-radius: 50%; border: 3px solid #CCCCCC; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);"  /> 
-<img src="../assets/images/certificates/ocp_badge.jpg" alt="Red Hat Certified Linux Engineer Badge" style="border-radius: 50%; border: 3px solid #CCCCCC; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);"  /> 
+<img src="../assets/images/certificates/rhcsa_badge.jpg" alt="Red Hat Certified Linux Administrator Badge" class="certificate-badge devops" /> 
+<img src="../assets/images/certificates/rhce_badge.jpg" alt="Red Hat Certified Linux Engineer Badge" class="certificate-badge devops"  /> 
+<img src="../assets/images/certificates/oca_badge.png" alt="Red Hat Certified Linux Engineer Badge" class="certificate-badge devops" /> 
+<img src="../assets/images/certificates/ocp_badge.jpg" alt="Red Hat Certified Linux Engineer Badge" class="certificate-badge devops" />
 
 ### Red Hat Certified Linux Administrator 7 [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
-----------------------------------------
+---
 
 ### Red Hat Certified Linux Engineer 7 [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
-----------------------------------------
+---
 
 ### Oracle Certified Java 8 Association [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
-----------------------------------------
+---
 
 ### Oracle Certified Java 8 Professional [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
-----------------------------------------
+---

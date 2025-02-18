@@ -15,3 +15,22 @@ search: false
 .language-plaintext {
     background: #E0F7FA !important;
 }
+
+.certificate-badge {
+    width: 200px;
+    height: 180px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 0 12px rgba(52, 152, 219, 0.3);
+    border-radius: 50%;
+}
+
+.red-team {
+    border: 3px solid #e74c3c !important;
+}
+
+.blue-team {
+    border: 3px solid #3498db !important;
+}
+
+.devops {
+    border: 3px solid #CCCCCC !important;
+}
