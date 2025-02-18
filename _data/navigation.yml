@@ -1,8 +1,6 @@
 main:
   - title: "Home"
     url: /index.html
-  - title: "About"
-    url: /about/
   - title: "Defensive"
     url: /defensive/
   - title: "Offensive"
@@ -11,12 +9,14 @@ main:
   #   url: /ctf/    
   - title: "Linux"
     url: /linux/  
-  - title: "Devops"
+  - title: "DevOps"
     url: /devops/  
   - title: "Certificates"
     url: /certificates/
   # - title: "Portfolio"
   #   url: /portfolio/
+  - title: "About"
+    url: /about/
   - title: "Archive"
     url: /year-archive/
 
