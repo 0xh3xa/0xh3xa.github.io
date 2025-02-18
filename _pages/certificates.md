@@ -53,14 +53,16 @@ classes: wide
 
 ## <u>DevOps</u>
 
-<img src="../assets/images/certificates/rhcsa_badge.jpg" alt="Red Hat Certified Linux Administrator Badge" style="border-radius: 50%; border: 3px solid #3498db; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);" /> 
-<img src="../assets/images/certificates/rhce_badge.jpg" alt="Red Hat Certified Linux Engineer Badge" style="border-radius: 50%; border: 3px solid #3498db; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);"  /> 
+<img src="../assets/images/certificates/rhcsa_badge.jpg" alt="Red Hat Certified Linux Administrator Badge" style="border-radius: 50%; border: 3px solid #CCCCCC; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);" /> 
+<img src="../assets/images/certificates/rhce_badge.jpg" alt="Red Hat Certified Linux Engineer Badge" style="border-radius: 50%; border: 3px solid #CCCCCC; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);"  /> 
+<img src="../assets/images/certificates/oca_badge.png" alt="Red Hat Certified Linux Engineer Badge" style="border-radius: 50%; border: 3px solid #CCCCCC; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);"  /> 
+<img src="../assets/images/certificates/ocp_badge.jpg" alt="Red Hat Certified Linux Engineer Badge" style="border-radius: 50%; border: 3px solid #CCCCCC; width: 200px; height: 180px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);"  /> 
 
-### Red Hat Certified Linux Administrator [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
+### Red Hat Certified Linux Administrator 7 [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
 ----------------------------------------
 
-### Red Hat Certified Linux Engineer [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
+### Red Hat Certified Linux Engineer 7 [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
 ----------------------------------------
 
