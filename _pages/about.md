@@ -17,5 +17,4 @@ My skills encompass expertise in Reverse Engineering, Exploit Development, Malwa
 
 I am well-versed in programming languages including Assembly, `Java`, `Python`, `C`, `Node.js`, `PHP`. I have hand-on cloud including `AWS`, `Google Cloud (GCP)`. I am currently expanding my knowledge in Penetration Testing.
 
-
-
+If you have any questions, ideas for collaboration, or just want to discuss the latest in cybersecurity and low-level programming, feel free to reach out via [e-mail](mailto:0xh3xa@gmail.com).
