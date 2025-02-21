@@ -11,7 +11,6 @@ tags:
   - Reverse Engineering
 toc: true
 toc_sticky: true
-date: August 26, 2023
 ---
 
 ### What is UPX packer?
@@ -36,7 +35,7 @@ up --help
 
 I have a small C program that prints "Hello World!" with the name "hello.c" and I want to use the UPX to pack it.
 
-First I will compile it and output the exe file, using the following command, I am using the MSVC compiler, more info: [https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170#find-a-compiler-option](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170#find-a-compiler-option)
+First I will compile it and output the exe file, using the following command, I am using the MS VC compiler, more info: [https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170#find-a-compiler-option](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170#find-a-compiler-option)
 
 ```console
 cl -o 
