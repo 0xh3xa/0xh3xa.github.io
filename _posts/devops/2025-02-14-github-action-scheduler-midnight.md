@@ -4,7 +4,7 @@ header:
   teaser: /assets/images/thumbnail/post-thumbnail.jpg
 excerpt: "GitHub Action Scheduler"
 categories:
-    - Devops
+    - DevOps
 tags:
     - GitHub Actions
 toc: true
