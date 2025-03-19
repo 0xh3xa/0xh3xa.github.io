@@ -1,6 +1,6 @@
 ---
 layout: category
-permalink: /devops/
+permalink: /Devops/
 title: DevOps
 taxonomy: Devops
 classes: wide
