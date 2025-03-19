@@ -10,7 +10,7 @@ main:
   - title: "Linux"
     url: /linux/  
   - title: "DevOps"
-    url: /DevOps/  
+    url: /devops/  
   - title: "Certificates"
     url: /certificates/
   # - title: "Portfolio"
