@@ -4,7 +4,7 @@ header:
   teaser: /assets/images/thumbnail/post-thumbnail.jpg
 excerpt: "Introduction to Java Record JDK-14"
 categories:
-    - Devops
+    - DevOps
 tags:
     - Java
 toc: true
