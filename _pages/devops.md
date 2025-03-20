@@ -1,7 +1,7 @@
 ---
 layout: category
 permalink: /devops/
-title: DevOps   
-taxonomy: Devops
+title: DevOps
+taxonomy: DevOps
 classes: wide
 ---
