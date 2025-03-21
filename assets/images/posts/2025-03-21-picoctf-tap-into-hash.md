@@ -1,5 +1,5 @@
 ---
-title: "picoCTF: Tap into Hash – Walkthrough"
+title: "picoCTF: Tap into Hash - Walkthrough"
 header:
   teaser: /assets/images/thumbnail/ctf-thumbnail.png
 excerpt: "Solution for Tap into Hash"

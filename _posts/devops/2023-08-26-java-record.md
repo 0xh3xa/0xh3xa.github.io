@@ -73,7 +73,7 @@ javac --enable-preview -source 14 ClassName.java
 
 * Configure the IntelliJ IDEA to enable feature preview:
 
-**File** &#8594; **Project structure** &#8594; **Project SDK** &#8594; **choose the Project language level as ‘14 (Preview) – Records, patterns, text blocks’ for your Project and Modules settings**
+**File** &#8594; **Project structure** &#8594; **Project SDK** &#8594; **choose the Project language level as ‘14 (Preview) - Records, patterns, text blocks’ for your Project and Modules settings**
 
 ### Compare the records with old fashion pojo class
 

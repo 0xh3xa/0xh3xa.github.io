@@ -1,5 +1,5 @@
 ---
-title: "picoCTF: Quantum Scrambler – Walkthrough"
+title: "picoCTF: Quantum Scrambler - Walkthrough"
 header:
   teaser: /assets/images/thumbnail/ctf-thumbnail.png
 excerpt: "Solution for picoCTF: Quantum Scrambler"
