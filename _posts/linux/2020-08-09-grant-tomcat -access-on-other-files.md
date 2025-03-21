@@ -1,7 +1,7 @@
 ---
 title: "How to grant Tomcat 9 access on other files"
 header:
-  teaser: /assets/images/thumbnail/post-thumbnail.jpg
+  teaser: /assets/images/thumbnail/post-thumbnail.png
 categories:
     - Linux
 tags:

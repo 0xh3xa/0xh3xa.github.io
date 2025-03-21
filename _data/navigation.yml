@@ -5,8 +5,8 @@ main:
     url: /defensive/
   - title: "Offensive"
     url: /offensive/
-  # - title: "CTF"
-  #   url: /ctf/    
+  - title: "CTF"
+    url: /ctf/    
   - title: "Linux"
     url: /linux/  
   - title: "DevOps"
@@ -17,6 +17,6 @@ main:
   #   url: /portfolio/
   - title: "About"
     url: /about/
-  - title: "Archive"
-    url: /year-archive/
+  # - title: "Archive"
+  #   url: /year-archive/
 

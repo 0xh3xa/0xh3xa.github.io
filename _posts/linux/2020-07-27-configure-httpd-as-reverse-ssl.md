@@ -1,7 +1,7 @@
 ---
 title: "Configure Apache httpd as reverse proxy"
 header:
-  teaser: /assets/images/thumbnail/post-thumbnail.jpg
+  teaser: /assets/images/thumbnail/post-thumbnail.png
 excerpt: "How to configure Apache httpd as Reverse proxy in front of the tomcat java web application with SSL by Let's Encrypt?"
 categories:
     - Linux

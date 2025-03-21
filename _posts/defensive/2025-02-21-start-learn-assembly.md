@@ -1,7 +1,7 @@
 ---
 title: "How to start learning x86 Assembly Language"
 header:
-  teaser: /assets/images/posts/assembly.png
+  teaser: /assets/images/thumbnail/assembly-thumbnail.png
 ribbon: DodgerBlue
 excerpt: "Learning Assembly language for beginners"
 date: February 18, 2025
