@@ -2,7 +2,7 @@
 title: "picoCTF: Tap into Hash – Walkthrough"
 header:
   teaser: /assets/images/thumbnail/ctf-thumbnail.png
-excerpt: "Solution for Tap into Hash"
+excerpt: "Solution for picoCTF: Tap into Hash"
 categories:
     - CTF
 tags:

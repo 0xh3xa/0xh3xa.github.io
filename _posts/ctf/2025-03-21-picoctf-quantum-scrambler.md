@@ -2,7 +2,7 @@
 title: "picoCTF: Quantum Scrambler – Walkthrough"
 header:
   teaser: /assets/images/thumbnail/ctf-thumbnail.png
-excerpt: "Solution for Tap into Hash"
+excerpt: "Solution for picoCTF: Quantum Scrambler"
 categories:
     - CTF
 tags:
