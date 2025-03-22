@@ -1,7 +1,7 @@
 ---
 title: "How to Log In to Compute Engine in GCP After MFA Lockout"
 header:
-  teaser: /assets/images/thumbnail/post-thumbnail.png
+  teaser: /assets/images/thumbnail/cloud-thumbnail.png
 excerpt: "Startup GCP Compute Engine"
 categories:
     - DevOps
