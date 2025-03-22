@@ -44,17 +44,13 @@ def get_flag():
 
   hex_flag = []
   for c in flag:
-    hex_flag.append([chr(int(c, 16))])
+    hex_flag.append(chr(int(c, 16)))
 
   return hex_flag
 
 def main():
   flag = get_flag()
-  filtered_text = extract_outer_list(flag)
-  print(''.join(filtered_text))
-
-if __name__ == '__main__':
-  main()
+  print(''.join(flag))
 ```
 
 ```bash
