@@ -59,7 +59,7 @@ public class Example {
 
 , **output**
 
-```sh
+```bash
 Author[id=187, name=author]
 ```
 
@@ -67,7 +67,7 @@ Author[id=187, name=author]
 
 * You can run the following command
 
-```sh
+```bash
 javac --enable-preview -source 14 ClassName.java
 ```
 

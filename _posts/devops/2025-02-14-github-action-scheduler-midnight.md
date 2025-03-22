@@ -22,7 +22,7 @@ GitHub Actions is an integrated automation tool in GitHub that lets you create c
 
 If you're looking to use the scheduler in GitHub Actions, you can start with this basic example that runs every midnight. The cron expression here specifies that it triggers at 00:00 (midnight) UTC daily.
 
-```sh
+```bash
 name: Midnight Scheduler
 
 on:
@@ -46,7 +46,7 @@ jobs:
 To verify if changes have occurred, add the following condition. It checks for any commits made in the past 24 hours relative to the last deployment:
 
 {% raw %}
-```sh
+```bash
 test -z "$(git rev-list --after="24 hours" ${{ github.sha }})"
 ```
 {% endraw %}

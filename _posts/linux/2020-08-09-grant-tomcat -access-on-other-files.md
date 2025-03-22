@@ -1,7 +1,8 @@
 ---
-title: "How to grant Tomcat 9 access on other files"
+title: "Grant Tomcat 9 Access to Other Files"
 header:
   teaser: /assets/images/thumbnail/post-thumbnail.png
+excerpt: Learn how to grant Tomcat 9 access to files outside its default directory.
 categories:
     - Linux
 tags:
@@ -13,48 +14,58 @@ toc_label: "Content"
 date: August 08, 2020
 ---
 
-## How to grant Tomcat 9 access on other files
+## Granting Tomcat 9 Access to External Files
 
-Sometime you will need to access files from the tomcat either the in the same directory or other directories. This need to configure from Linux side without any configuration to the Tomcat 
+Sometimes, you may need Tomcat 9 to access files located in different directories on your Linux system. This requires adjusting file and directory permissions on the Linux side without modifying Tomcat’s internal configuration.
 
-## Command Steps
+## Steps to Grant Access
 
-Add the tomcat to a group and grant this group to the required access to that files, by creating a group called `webserver`. Then restart tomcat and try again
+1. Create a user group and add Tomcat to it
 
-```sh
+First, create a group named webserver and add the Tomcat 9 user to this group:
+
+```bash
 sudo groupadd webserver
-```
 
-```sh
 sudo usermod -a -G webserver tomcat9
 ```
 
-```sh
+2. Change group ownership of the required files
+
+Update the group ownership of the file that Tomcat needs to access:
+
+```bash
 sudo chgrp webserver configuration.yaml
 ```
 
-```sh
+Grant read and write permissions to the webserver group:
+
+```bash
 sudo chmod g=rw configuration.yaml
 ```
 
-```sh
+3. Restart Tomcat to apply changes
+
+```bash
 sudo systemctl restart tomcat9
 ```
 
-, Update the group ownership of the directories add permission to the group
+4. Update group ownership and permissions for directories
 
-```sh
+If tomcats needs access to entire directories, update their group ownership and permissions:
+
+```bash
 sudo chgrp webserver /opt/internal/data/
-```
 
-```sh
 sudo chgrp webserver /opt/internal/
 ```
 
-```sh
-sudo chmod g=rwx /opt/internal/data/
-```
+Grant read, write, and execute permissions to the webserver group:
 
-```sh
+```bash
+sudo chmod g=rwx /opt/internal/data/
+
 sudo chmod g=rwx /opt/internal/
 ```
+
+Following these steps will ensure Tomcat 9 has the necessary permissions to access files and directories as required.

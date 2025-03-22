@@ -28,7 +28,7 @@ We give people the digital certificates they need in order to enable HTTPS (SSL/
 
 1. Install and configure Let's encrypt with apache-httpd
 
-```sh
+```bash
  yum install certbot python2-certbot-apache
 ```
 , The installed of the **SSL Certificate** file will be in this path `/etc/letsencrypt/live/exmple.com/fullchain.pem`
@@ -37,7 +37,7 @@ We give people the digital certificates they need in order to enable HTTPS (SSL/
 
 2. Configure the firewall to allow HTTPS port 443 only
 
-```sh
+```bash
  firewall-cmd --permanent --zone=public --remove-port=80/tcp
 
  firewall-cmd --permanent --zone=public --remove-port=8080/tcp 

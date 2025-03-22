@@ -29,7 +29,7 @@ After you download the UPX, you can open the Unix-like systems terminal or Windo
 
 Open the terminal  and type 
 
-```shell
+```bashell
 up --help
 ```
 
@@ -43,7 +43,7 @@ cl -o
 
 After that, I will pack the sample using the following command
 
-```shell
+```bashell
 upx hello.exe -o hello-packed.exe 
 ```
 
@@ -104,7 +104,7 @@ Two options are using the command line and other manually using the xDbg debugge
 
 Let's start by using the command line first
 
-```shell
+```bashell
 upx -d hello-packed.exe --o hello-unpacked.exe
 ```
 
