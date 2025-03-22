@@ -72,3 +72,11 @@ search: false
 body, nav {
   background: #24262A !important // #292a2d !important;
 }
+
+.masthead {
+  border: 0 !important;
+}
+
+.page__hero--overlay {
+  opacity: 0.85 !important;
+}
