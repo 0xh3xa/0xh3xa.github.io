@@ -24,10 +24,11 @@ search: false
   --bg-linen: #faf0e6;
   --bg-light-gray: #f5f5f5;
   --bg-language: #1A1B26;
+  --bg-language-darker: #010812;
 }
 
 .language-plaintext {
-  background: var(--bg-language) !important;
+  background: var(--bg-language-darker) !important;
   font-family: "Fira Code", "Source Code Pro", "Consolas", monospace;
   color: #E5BF78;
 }
@@ -66,4 +67,8 @@ search: false
 
 .archive__item-teaser {
   max-height: 180px !important;
+}
+
+body, nav {
+  background: #24262A !important // #292a2d !important;
 }

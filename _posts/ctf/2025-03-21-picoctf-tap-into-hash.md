@@ -26,7 +26,7 @@ The provided Python script accepts an argument and runs a main function that dis
 
 ## 🔑 Solution
 
-### Breaking Down the encrypt Function
+### Breaking Down the Encryption Function
 
 The encrypt function takes three parameters:
 
