@@ -1,9 +1,4 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
----
-
-@charset "utf-8";
+--- # Only the main Sass file needs front matter (the dashes are enough) search: false --- @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
@@ -69,12 +64,14 @@ search: false
   max-height: 180px !important;
 }
 
-body, nav {
+body,
+nav {
   background: #24262A !important // #292a2d !important;
 }
 
 .masthead {
   border: 0 !important;
+}
 
 .page__hero--overlay {
   opacity: 0.9 !important;
