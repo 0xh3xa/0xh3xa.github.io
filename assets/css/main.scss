@@ -23,14 +23,14 @@ search: false
   --bg-light-turquoise: #e0ffff;
   --bg-linen: #faf0e6;
   --bg-light-gray: #f5f5f5;
-  --bg-language: #1A1B26;
+  --bg-language: #1a1b26;
   --bg-language-darker: #010812;
 }
 
 .language-plaintext {
   background: var(--bg-language-darker) !important;
   font-family: "Fira Code", "Source Code Pro", "Consolas", monospace;
-  color: #E5BF78;
+  color: #e5bf78;
 }
 
 #main {
@@ -69,8 +69,9 @@ search: false
   max-height: 180px !important;
 }
 
-body, nav {
-  background: #24262A !important // #292a2d !important;
+body,
+nav {
+  background: #24262a !important; // #292a2d !important;
 }
 
 .masthead {
@@ -79,4 +80,192 @@ body, nav {
 
 .page__hero--overlay {
   opacity: 0.9 !important;
+}
+
+.ribbon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: DodgerBlue;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+$post_color_white: #fff;
+$post_color_prime: #5ad67d;
+$post_color_grey: #e2e2e2;
+$post_color_grey_dark: #a2a2a2;
+$post_border_radius: 8px;
+
+.post-blog-card:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(255, 255, 255, 0.8);
+  transform: translateY(-0.25em);
+}
+.post-blog-card {
+  min-height: 200px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  margin: auto 1rem;
+  transition: 0.3s;
+  margin-bottom: 1.6%;
+  line-height: 1.4;
+  font-family: sans-serif;
+  z-index: 0;
+  a {
+    color: inherit;
+    &:hover {
+      color: $post_color_prime;
+    }
+  }
+  .post-meta {
+    position: relative;
+    z-index: 0;
+    height: 200px;
+  }
+  .post-description {
+    border-radius: 0 0 $post_border_radius $post_border_radius;
+    padding: 1rem;
+    background: #fffff5ee; // $post_color_white;
+    position: relative;
+    z-index: 1;
+    h1,
+    h2 {
+      color: #444444;
+      font-family: Poppins, sans-serif;
+    }
+    h1 {
+      line-height: 1;
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: $post_color_grey_dark;
+      margin-top: 5px;
+    }
+    .post-time {
+      float: right;
+    }
+  }
+  p {
+    position: relative;
+    margin: 1rem 0 0;
+    font-size: 0.8rem;
+    &:first-of-type {
+      margin-top: 1.25rem;
+      &:before {
+        content: "";
+        position: absolute;
+        height: 5px;
+        background: var(--ribbon);
+        width: 35px;
+        top: -0.75rem;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  .post-description {
+    color: #696969;
+  }
+
+  .post-date {
+    float: left;
+    color: #9a9a9a;
+  }
+
+  .post-time {
+    float: right;
+    color: #9a9a9a;
+  }
+
+  .post-ribbon {
+    border-radius: $post_border_radius $post_border_radius 0 0;
+    background: var(--image-url);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s;
+  }
+
+  .post-ribbon4 {
+    font-family: "Carter One";
+    font-size: 1.3rem;
+    color: white;
+    position: absolute;
+    top: 17px;
+    padding: 8px 10px;
+    background: var(--ribbon);
+    box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 0 $post_border_radius $post_border_radius 0;
+  }
+  .post-ribbon4:before,
+  .post-ribbon4:after {
+    content: "";
+    position: absolute;
+  }
+  .post-ribbon4:before {
+    width: 7px;
+    height: 100%;
+    top: 0;
+    left: -7px;
+    padding: 0 0 7px;
+    background: inherit;
+    border-radius: 5px 0 0 5px;
+  }
+  .post-ribbon4:after {
+    width: 5px;
+    height: 5px;
+    bottom: -5px;
+    left: -5px;
+    background: #e3e3e3;
+    border-radius: 5px 0 0 5px;
+  }
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+    max-width: 800px;
+    .post-meta {
+      flex-basis: 30%;
+      height: auto;
+    }
+    .post-description {
+      border-radius: 0px $post_border_radius $post_border_radius 0;
+      flex-basis: 70%;
+      // &:before {
+      //   transform: skewX(-3deg);
+        // content: "";
+      //   background: #fff;
+      //   width: 30px;
+      //   position: absolute;
+      //   left: -10px;
+      //   top: 0;
+      //   bottom: 0;
+      //   z-index: -1;
+      // }
+    }
+    .post-ribbon {
+      border-radius: $post_border_radius 0px 0px $post_border_radius;
+    }
+    .post-ribbon4 {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .post-ribbon {
+      width: 100%;
+    }
+  }
 }
