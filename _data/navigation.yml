@@ -1,10 +1,10 @@
 main:
   - title: "Home"
     url: /index.html
-  - title: "Defensive"
-    url: /defensive/
   - title: "Offensive"
     url: /offensive/
+  - title: "Defensive"
+    url: /defensive/
   - title: "CTF"
     url: /ctf/    
   - title: "Linux"
