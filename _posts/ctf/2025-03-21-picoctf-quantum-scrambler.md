@@ -1,12 +1,13 @@
 ---
-title: "picoCTF: Quantum Scrambler - Walkthrough"
+title: "PicoCTF: Quantum Scrambler - Walkthrough"
 header:
   teaser: /assets/images/thumbnail/ctf-thumbnail.png
-excerpt: "Solution for picoCTF: Quantum Scrambler"
+excerpt: "Solution for PicoCTF: Quantum Scrambler"
 categories:
     - CTF
 tags:
     - picoctf
+    - reverse_engineering
 toc: true
 toc_sticky: true
 ribbon: DodgerBlue
@@ -14,13 +15,15 @@ toc_label: "Content"
 date: Mar 21, 2025
 ---
 
-Today, we're diving into the picoCTF challenge: `Quantum Scrambler`. Let's break it down step by step.
+Today, we're diving into the picoCTF challenge: `Quantum Scrambler` 2025. Let's break it down step by step.
 
 ![alt text](/assets/images/posts/ctf/picoctf-quantum-scrambler/ctf-image.png)
 
-### Understanding the Source Code and Solution
+## 📊 Challenge Overview
 
 The provided Python script reads the contents of a flag.txt file, where each hex value is converted into a corresponding character to reveal the flag.
+
+## 🔑 Solution
 
 To obtain the `flag.txt` file, you need to connect to the server using netcat with the following command:
 
@@ -57,8 +60,8 @@ def main():
  python quantum_scrambler.py
 ```
 
-, output
+## 🚩 Flag Capture
 
-```text
+```plaintext
 picoCTF{python_is_weird9ece5f24}
 ```

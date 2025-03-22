@@ -1,5 +1,5 @@
 ---
-title: "picoCTF: Tap into Hash - Walkthrough"
+title: "PicoCTF: Tap into Hash - Walkthrough"
 header:
   teaser: /assets/images/thumbnail/ctf-thumbnail.png
 excerpt: "Solution for picoCTF: Tap into Hash"
@@ -7,6 +7,7 @@ categories:
     - CTF
 tags:
     - picoctf
+    - reverse_engineering
 toc: true
 toc_sticky: true
 ribbon: DodgerBlue
@@ -14,15 +15,16 @@ toc_label: "Content"
 date: Mar 21, 2025
 ---
 
-Today, we're diving into the picoCTF challenge: `Tap into Hash`. Let's break it down step by step and decrypt the given ciphertext.
+Today, we're diving into the picoCTF challenge: `Tap into Hash` 2025. Let's break it down step by step and decrypt the given ciphertext.
 
 ![alt text](/assets/images/posts/ctf/picoctf-tap-into-hash/ctf-image.png)
 
 
-### Understanding the Source Code
+## 📊 Challenge Overview
 
 The provided Python script accepts an argument and runs a main function that displays the encrypted string. Before writing a decryption function, let's first analyze how the encryption process works.
 
+## 🔑 Solution
 
 ### Breaking Down the encrypt Function
 
@@ -32,7 +34,7 @@ The encrypt function takes three parameters:
 2. `inner_txt`: A string inserted in between
 3. `key`: The encryption key
 
-### Encryption Process:
+### Encryption Process
 
   1. Splitting the Plaintext: the function finds the midpoint of plaintext, splits it into first and second, then inserts `inner_txt` in between.
 
@@ -45,7 +47,7 @@ The encrypt function takes three parameters:
   5. The result is stored in ciphertext.
 
 
-```py
+```python
 def encrypt(plaintext, inner_txt, key):
     midpoint = len(plaintext) // 2
 
@@ -66,14 +68,13 @@ def encrypt(plaintext, inner_txt, key):
     return ciphertext
 ```
 
-## Decrypting the Ciphertext
+### Decrypt function
 
 Since the encryption method is XOR-based, decryption is straightforward:
 
 - XOR the encrypted string with the same key → This will recover the plaintext.
 
 ```python
-
 import ast
 import re
 
@@ -119,8 +120,8 @@ def main(token):
  python block_chain.py enc_flag
 ```
 
-, output
+## 🚩 Flag Capture
 
-```text
+```plaintext
 picoCTF{block_3SRhViRbT1qcX_XUjM0r49cH_qCzmJZzBK_8bb7bc38}
 ```

@@ -23,11 +23,13 @@ search: false
   --bg-light-turquoise: #e0ffff;
   --bg-linen: #faf0e6;
   --bg-light-gray: #f5f5f5;
+  --bg-language: #1A1B26;
 }
 
 .language-plaintext {
-  background: var(--bg-misty-rose) !important;
+  background: var(--bg-language) !important;
   font-family: "Fira Code", "Source Code Pro", "Consolas", monospace;
+  color: #E5BF78;
 }
 
 #main {
