@@ -16,8 +16,8 @@
   {% assign ribbon = 'darkgrey' %}
 {% endif %}
 
-{% if page.url == "/" %}
-  <article>
+{% if page.url == "/" or page.url == "/offensive/" or page.url == "/defensive/" or page.url == "/ctf/" or page.url == "/linux/" or page.url == "/devops/" %}
+  <div>
     <a href="{{ post.url | relative_url }}" class="post-blog-card" style="text-decoration: none; 
       --image-url: url({{ teaser }});
       --ribbon: {{ ribbon }};">
@@ -42,7 +42,7 @@
 
       </div>
     </a>
-  </article>
+  </div>
 {% else %}
   <div class="{{ include.type | default: 'list' }}__item">
     <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %}>
