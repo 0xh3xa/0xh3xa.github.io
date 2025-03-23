@@ -82,6 +82,16 @@ nav {
   opacity: 0.9 !important;
 }
 
+.highlighter-rouge {
+  border: 1px solid #444444;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.highlighter-rouge:hover {
+  border-color: #777777;
+}
+
 .ribbon {
   position: absolute;
   top: 10px;
@@ -130,7 +140,7 @@ $post_border_radius: 8px;
   .post-description {
     border-radius: 0 0 $post_border_radius $post_border_radius;
     padding: 1rem;
-    background: #fffff5ee; // $post_color_white;
+    background: #e9e9e0ee; // $post_color_white;
     position: relative;
     z-index: 1;
     h1,
@@ -178,7 +188,7 @@ $post_border_radius: 8px;
 
   .post-date {
     float: left;
-    color: #9a9a9a;
+    color: #786969; // #9a9a9a;
   }
 
   .post-time {
@@ -245,7 +255,7 @@ $post_border_radius: 8px;
       flex-basis: 70%;
       // &:before {
       //   transform: skewX(-3deg);
-        // content: "";
+      // content: "";
       //   background: #fff;
       //   width: 30px;
       //   position: absolute;
