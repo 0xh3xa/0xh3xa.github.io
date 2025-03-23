@@ -1,6 +1,6 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
-search: false
+ search: false
 ---
 
 @charset "utf-8";
@@ -69,9 +69,140 @@ search: false
   max-height: 180px !important;
 }
 
+body {
+  // font-family: Inter, Noto Sans, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  // font-size: 18px;
+  line-height: 1.8;
+  padding: 20px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 1em;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+/* Lists */
+/* Apply to all ul and ol except those inside nav */
+ul, ol {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+/* Override the styles for nav > ul */
+nav > ul {
+  font-size: 22px; /* or any other specific value you want */
+  margin-left: initial; /* or any other specific value you want */
+}
+
+ol > li {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 5px;
+}
+
+/* Strong/Bold Text */
+strong,
+b {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Blockquotes */
+blockquote {
+  font-size: 18px;
+  font-style: italic;
+  padding-left: 15px;
+  margin: 20px 0;
+}
+
+/* Code Blocks */
+pre {
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  // font-family: "Courier New", monospace;
+  font-size: 16px;
+}
+
+code {
+  padding: 2px 4px;
+  border-radius: 3px;
+  // font-family: "Courier New", monospace;
+  font-size: 16px;
+}
+
+/* Links */
+a {
+  color: #4DA6FF; // #007acc;
+  text-decoration: none;
+}
+
+// a:hover {
+//   text-decoration: underline;
+// }
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: 700;
+  text-align: left;
+}
+
 body,
 nav {
-  background: #24262a !important; // #292a2d !important;
+  background: #1e1f22 !important; // #24262a !important; // #292a2d !important;
+  color: #FFFFFF;
 }
 
 .masthead {
@@ -115,6 +246,7 @@ $post_border_radius: 8px;
   box-shadow: 0 0.5em 0.5em -0.4em rgba(255, 255, 255, 0.8);
   transform: translateY(-0.25em);
 }
+
 .post-blog-card {
   min-height: 200px;
   background: transparent;
@@ -126,33 +258,40 @@ $post_border_radius: 8px;
   line-height: 1.4;
   font-family: sans-serif;
   z-index: 0;
+
   a {
     color: inherit;
+
     &:hover {
       color: $post_color_prime;
     }
   }
+
   .post-meta {
     position: relative;
     z-index: 0;
     height: 200px;
   }
+
   .post-description {
     border-radius: 0 0 $post_border_radius $post_border_radius;
     padding: 1rem;
     background: #e9e9e0ee; // $post_color_white;
     position: relative;
     z-index: 1;
+
     h1,
     h2 {
       color: #444444;
       font-family: Poppins, sans-serif;
     }
+
     h1 {
       line-height: 1;
       margin: 0;
       font-size: 1.2rem;
     }
+
     h2 {
       font-size: 1rem;
       font-weight: 300;
@@ -160,16 +299,20 @@ $post_border_radius: 8px;
       color: $post_color_grey_dark;
       margin-top: 5px;
     }
+
     .post-time {
       float: right;
     }
   }
+
   p {
     position: relative;
     margin: 1rem 0 0;
     font-size: 0.8rem;
+
     &:first-of-type {
       margin-top: 1.25rem;
+
       &:before {
         content: "";
         position: absolute;
@@ -220,11 +363,13 @@ $post_border_radius: 8px;
     box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.3);
     border-radius: 0 $post_border_radius $post_border_radius 0;
   }
+
   .post-ribbon4:before,
   .post-ribbon4:after {
     content: "";
     position: absolute;
   }
+
   .post-ribbon4:before {
     width: 7px;
     height: 100%;
@@ -234,6 +379,7 @@ $post_border_radius: 8px;
     background: inherit;
     border-radius: 5px 0 0 5px;
   }
+
   .post-ribbon4:after {
     width: 5px;
     height: 5px;
@@ -246,10 +392,12 @@ $post_border_radius: 8px;
   @media (min-width: 640px) {
     flex-direction: row;
     max-width: 800px;
+
     .post-meta {
       flex-basis: 30%;
       height: auto;
     }
+
     .post-description {
       border-radius: 0px $post_border_radius $post_border_radius 0;
       flex-basis: 70%;
@@ -265,9 +413,11 @@ $post_border_radius: 8px;
       //   z-index: -1;
       // }
     }
+
     .post-ribbon {
       border-radius: $post_border_radius 0px 0px $post_border_radius;
     }
+
     .post-ribbon4 {
       font-size: 1rem;
     }

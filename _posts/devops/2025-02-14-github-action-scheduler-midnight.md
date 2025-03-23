@@ -14,7 +14,7 @@ toc_label: "Content"
 date: February 14, 2025
 ---
 
-Setting up a GitHub Action to run every midnight upon branch changes can be highly beneficial for your team's deployment process. GitHub offers a variety of trigger events such as when a pull request is opened, merged, or closed—as well as a scheduling option that lets you specify the exact time using cron syntax.
+Setting up a GitHub Action to run every midnight upon branch changes can be highly beneficial for your team's deployment process. GitHub offers a variety of trigger events such as when a pull request is opened, merged, or closed-as well as a scheduling option that lets you specify the exact time using cron syntax.
 
 ### What is GitHub Action?
 GitHub Actions is an integrated automation tool in GitHub that lets you create custom workflows to build, test, and deploy your code. By defining workflows in YAML files within your repository, you can trigger these actions based on events (like pushes, pull requests, or issues) or schedules, allowing you to automate repetitive tasks and streamline your development process. For more information https://docs.github.com/en/actions

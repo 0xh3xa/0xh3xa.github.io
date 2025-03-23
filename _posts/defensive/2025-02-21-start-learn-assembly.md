@@ -8,9 +8,8 @@ date: February 18, 2025
 categories:
   - Defensive
 tags:
-  - Assembly Language
-  - Beginners
-  - Reverse Engineering
+  - assembly
+  - reverse_engineering
 toc: true
 toc_sticky: true
 ---
