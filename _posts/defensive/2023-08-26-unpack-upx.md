@@ -29,7 +29,7 @@ After you download the UPX, you can open the Unix-like systems terminal or Windo
 
 Open the terminal  and type 
 
-```bashell
+```bash
 up --help
 ```
 
@@ -37,13 +37,13 @@ I have a small C program that prints "Hello World!" with the name "hello.c" and 
 
 First I will compile it and output the exe file, using the following command, I am using the MS VC compiler, more info: [https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170#find-a-compiler-option](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170#find-a-compiler-option)
 
-```console
+```powershell
 cl -o 
 ```
 
 After that, I will pack the sample using the following command
 
-```bashell
+```bash
 upx hello.exe -o hello-packed.exe 
 ```
 
@@ -104,7 +104,7 @@ Two options are using the command line and other manually using the xDbg debugge
 
 Let's start by using the command line first
 
-```bashell
+```bash
 upx -d hello-packed.exe --o hello-unpacked.exe
 ```
 

@@ -17,29 +17,31 @@
 {% endif %}
 
 
-<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet"> -->
 
-<a href="{{ post.url | relative_url }}" class="post-blog-card" style="text-decoration: none; 
+<article>
+  <a href="{{ post.url | relative_url }}" class="post-blog-card" style="text-decoration: none; 
     --image-url: url({{ teaser }});
     --ribbon: {{ ribbon }};">
 
-  <div class="post-meta">
-    <div class="post-ribbon">
-      <span class="post-ribbon4">{{ post.categories[0] }}</span>
+    <div class="post-meta">
+      <div class="post-ribbon">
+        <span class="post-ribbon4">{{ post.categories[0] }}</span>
+      </div>
     </div>
-  </div>
 
-  <div class="post-description">
-    <h1>{{ title }}</h1>
-    <p>  {{ post.excerpt | truncate: 120}}</p>
+    <div class="post-description">
+      <h1>{{ title }}</h1>
+      <p>  {{ post.excerpt | truncate: 120}}</p>
+      
+      <p class="post-date page__meta">
+        {{post.date | date_to_string}}
+      </p>
     
-    <p class="post-date page__meta">
-      {{post.date | date_to_string}}
-    </p>
-  
-    <!-- {% if post.read_time %}
-      <p class="post-time page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %} -->
+      <!-- {% if post.read_time %}
+        <p class="post-time page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+      {% endif %} -->
 
-  </div>
-</a>
+    </div>
+  </a>
+</article>
