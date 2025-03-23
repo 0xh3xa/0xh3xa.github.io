@@ -70,17 +70,17 @@
 }
 
 body {
-  // font-family: Inter, Noto Sans, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Inter, Noto Sans, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   // font-size: 18px;
   line-height: 1.8;
-  padding: 20px;
+  // padding: 20px;
 }
 
 /* Paragraphs */
 p {
   font-size: 18px;
   line-height: 1.8;
-  margin-bottom: 1em;
+  // margin-bottom: 1em;
 }
 
 /* Headings */
@@ -92,8 +92,8 @@ h5,
 h6 {
   font-weight: 700;
   line-height: 1.4;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
+  // margin-top: 1.5em;
+  // margin-bottom: 0.5em;
 }
 
 h1 {
@@ -120,57 +120,50 @@ h6 {
   font-size: 18px;
 }
 
-/* Lists */
-/* Apply to all ul and ol except those inside nav */
-ul, ol {
-  font-size: 18px;
-  margin-left: 20px;
-}
+// ul, ol {
+//   font-size: 18px;
+//   margin-left: 20px;
+// }
 
-/* Override the styles for nav > ul */
-nav > ul {
-  font-size: 22px; /* or any other specific value you want */
-  margin-left: initial; /* or any other specific value you want */
-}
+// nav > ul {
+//   font-size: 22px; /* or any other specific value you want */
+//   margin-left: initial; /* or any other specific value you want */
+// }
 
-ol > li {
-  font-size: 16px;
-  line-height: 1.7;
-  margin-bottom: 5px;
-}
+// ol > li {
+//   font-size: 16px;
+//   line-height: 1.7;
+//   margin-bottom: 5px;
+// }
 
-/* Strong/Bold Text */
-strong,
-b {
-  font-size: 18px;
-  font-weight: 700;
-}
+// strong,
+// b {
+//   font-size: 18px;
+//   font-weight: 700;
+// }
 
-/* Blockquotes */
-blockquote {
-  font-size: 18px;
-  font-style: italic;
-  padding-left: 15px;
-  margin: 20px 0;
-}
+// blockquote {
+//   font-size: 18px;
+//   font-style: italic;
+//   padding-left: 15px;
+//   margin: 20px 0;
+// }
 
-/* Code Blocks */
-pre {
-  padding: 10px;
-  border-radius: 5px;
-  overflow-x: auto;
-  // font-family: "Courier New", monospace;
-  font-size: 16px;
-}
+// pre {
+//   padding: 10px;
+//   border-radius: 5px;
+//   overflow-x: auto;
+//   // font-family: "Courier New", monospace;
+//   font-size: 16px;
+// }
 
-code {
-  padding: 2px 4px;
-  border-radius: 3px;
-  // font-family: "Courier New", monospace;
-  font-size: 16px;
-}
+// code {
+//   padding: 2px 4px;
+//   border-radius: 3px;
+//   // font-family: "Courier New", monospace;
+//   font-size: 16px;
+// }
 
-/* Links */
 a {
   color: #4DA6FF; // #007acc;
   text-decoration: none;
@@ -180,24 +173,23 @@ a {
 //   text-decoration: underline;
 // }
 
-/* Tables */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
+// table {
+//   width: 100%;
+//   border-collapse: collapse;
+//   margin-top: 20px;
+// }
 
-th,
-td {
-  border: 1px solid #ddd;
-  padding: 10px;
-}
+// th,
+// td {
+//   border: 1px solid #ddd;
+//   padding: 10px;
+// }
 
-th {
-  background-color: #f0f0f0;
-  font-weight: 700;
-  text-align: left;
-}
+// th {
+//   background-color: #f0f0f0;
+//   font-weight: 700;
+//   text-align: left;
+// }
 
 body,
 nav {
