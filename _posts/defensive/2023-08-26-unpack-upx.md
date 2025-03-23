@@ -2,8 +2,8 @@
 title: "Unpacking UPX packer"
 header:
   teaser: /assets/images/thumbnail/post-thumbnail.png
-ribbon: DodgerBlue
 excerpt: "Quick review of unpacking the UPX packer"
+ribbon: DodgerBlue
 date: August 26, 2023
 categories:
   - Defensive

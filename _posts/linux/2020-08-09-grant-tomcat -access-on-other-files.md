@@ -3,6 +3,7 @@ title: "Grant Tomcat 9 Access to Other Files"
 header:
   teaser: /assets/images/thumbnail/post-thumbnail.png
 excerpt: Learn how to grant Tomcat 9 access to files outside its default directory.
+ribbon: "#1abc9c"
 categories:
     - Linux
 tags:

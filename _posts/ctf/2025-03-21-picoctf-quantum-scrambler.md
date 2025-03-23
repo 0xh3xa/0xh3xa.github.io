@@ -3,6 +3,7 @@ title: "PicoCTF: Quantum Scrambler - Walkthrough"
 header:
   teaser: /assets/images/thumbnail/ctf-thumbnail.png
 excerpt: "Solution for PicoCTF: Quantum Scrambler"
+ribbon: "#f39c12"
 categories:
     - CTF
 tags:
@@ -10,7 +11,6 @@ tags:
     - reverse_engineering
 toc: true
 toc_sticky: true
-ribbon: DodgerBlue
 toc_label: "Content"
 date: Mar 21, 2025
 ---

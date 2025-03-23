@@ -3,6 +3,7 @@ title: "What Is a Java Record?"
 header:
   teaser: /assets/images/thumbnail/post-thumbnail.png
 excerpt: "Introduction to Java Record JDK-14"
+ribbon: "#8e44ad"
 categories:
     - DevOps
 tags:

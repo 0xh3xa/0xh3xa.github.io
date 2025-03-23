@@ -3,6 +3,7 @@ title: "How do I schedule a GitHub Action to run at midnight on branch changes?"
 header:
   teaser: /assets/images/thumbnail/post-thumbnail.png
 excerpt: "GitHub Action Scheduler"
+ribbon: "#8e44ad"
 categories:
     - DevOps
 tags:
