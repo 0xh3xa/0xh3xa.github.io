@@ -101,6 +101,9 @@ author:
     - label: "Stackoverflow"
       icon: "fab fa-fw fa-stack-overflow"
       url: "https://stackoverflow.com/users/3582831/0xh3xa"
+    # - label: "Buy Me a Coffee"
+    #   icon: "fas fa-mug-hot"
+    #   url: "https://www.buymeacoffee.com/0xh3xa"
 
 footer:
   links:
