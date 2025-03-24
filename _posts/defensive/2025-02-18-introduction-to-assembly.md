@@ -20,7 +20,7 @@ Learning Assembly language is essential and useful skill you would have in cyber
 
 ## What is Assembly Language?
 
-From [Wikipedia::Assembly_language](https://en.wikipedia.org/wiki/Assembly_language) "In computer programming, Assembly language (alternatively assembler language or symbolic machine code), often referred to simply as Assembly and commonly abbreviated as ASM or asm, is any low-level programming language with a very strong correspondence between the instructions in the language and the architecture's machine code instructions."
+From [Assembly_language](https://en.wikipedia.org/wiki/Assembly_language) "In computer programming, Assembly language (alternatively assembler language or symbolic machine code), often referred to simply as Assembly and commonly abbreviated as ASM or asm, is any low-level programming language with a very strong correspondence between the instructions in the language and the architecture's machine code instructions."
 
 Good point to know that each Assembly language depends or tight to computer architecture, usually this is tight to Computer Instruction Set (ISA) architecture, which is  is the abstract model that defines the set of instructions a processor can execute, as well as the hardware components visible to a programmer. In essence, it’s the interface between the software and the underlying hardware. Here are the key aspects:
 
@@ -29,7 +29,7 @@ Good point to know that each Assembly language depends or tight to computer arch
 - Memory Addressing Modes: Outlines how memory is accessed and managed.
 - Data Types: Determines what kinds of data (e.g., integers, floating-point numbers) the processor can handle.
 - Control Flow: Includes instructions for branching and controlling the sequence of execution.
-ISAs serve as the foundation for both hardware design and software development, ensuring that programs written for one processor can run on any processor that implements the same ISA. For more information [Wikipedia::Instruction_set_architecture](https://en.wikipedia.org/wiki/Instruction_set_architecture).
+ISAs serve as the foundation for both hardware design and software development, ensuring that programs written for one processor can run on any processor that implements the same ISA. For more information [Instruction_set_architecture](https://en.wikipedia.org/wiki/Instruction_set_architecture).
 
 "Because assembly depends on the machine code instructions, each assembly language is specific to a particular computer architecture. Sometimes there is more than one assembler for the same architecture, and sometimes an assembler is specific to an operating system or to particular operating systems. Most Assembly languages do not provide specific syntax for operating system calls, and most Assembly languages can be used universally with any operating system."
 
@@ -80,11 +80,11 @@ mov eax, 0x1
 
 The second thing is the different assembler like GNU assembler, nasm by Netwide, masm by Microsoft, turbo assembler (TASM) by Borland, for more information you can find the below link:
 
-- [Wikibooks::GNU_assembly_syntax](https://en.wikibooks.org/wiki/X86_Assembly/GNU_assembly_syntax)
-- [Wikipedia::GNU_Assembler](https://en.wikipedia.org/wiki/GNU_Assembler)
-- [Wikibooks::NASM_Syntax](https://en.wikibooks.org/wiki/X86_Assembly/NASM_Syntax)
-- [Wikipedia::Microsoft_Macro_Assembler](https://en.wikipedia.org/wiki/Microsoft_Macro_Assembler)
-- [Wikipedia::Turbo_Assembler](https://en.wikipedia.org/wiki/Turbo_Assembler)
+- [GNU_assembly_syntax](https://en.wikibooks.org/wiki/X86_Assembly/GNU_assembly_syntax)
+- [GNU_Assembler](https://en.wikipedia.org/wiki/GNU_Assembler)
+- [NASM_Syntax](https://en.wikibooks.org/wiki/X86_Assembly/NASM_Syntax)
+- [Microsoft_Macro_Assembler](https://en.wikipedia.org/wiki/Microsoft_Macro_Assembler)
+- [Turbo_Assembler](https://en.wikipedia.org/wiki/Turbo_Assembler)
 
 ## Next Step  
 
