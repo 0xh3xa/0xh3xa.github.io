@@ -56,7 +56,11 @@ analytics:
   google:
     tracking_id: "G-90CM0PJN5Q"
     anonymize_ip: true
-    
+
+head_scripts:
+  - https://code.jquery.com/jquery-3.2.1.min.js
+  - /assets/js/custom-script.js
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
