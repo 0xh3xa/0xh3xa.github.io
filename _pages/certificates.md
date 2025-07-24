@@ -10,9 +10,11 @@ classes: wide
 
 ## <u>Cyber Security</u>
 
-<img src="../assets/images/certificates/eMAPT_badge.png" alt="eLearnSecurity Certified Mobile Application Penetration Tester eMAPT Badge" class="certificate-badge red-team"  style="height:190px;"/> 
-<img src="../assets/images/certificates/eCXD_badge.png" alt="eLearnSecurity Certified Exploit Developer eCXD Badge" class="certificate-badge red-team" /> 
-<img src="../assets/images/certificates/eCMAP_badge.png" alt="eLearnSecurity Certified Malware Analysis Professional eCMAP Badge" class="certificate-badge blue-team" />
+<div>
+  <img src="../assets/images/certificates/eMAPT_badge.png" alt="eLearnSecurity Certified Mobile Application Penetration Tester eMAPT Badge" class="certificate-badge red-team"  style="height:190px;width:200px"/> 
+  <img src="../assets/images/certificates/eCXD_badge.png" alt="eLearnSecurity Certified Exploit Developer eCXD Badge" class="certificate-badge red-team" style="height:150px;width:200px"/> 
+  <img src="../assets/images/certificates/eCMAP_badge.png" alt="eLearnSecurity Certified Malware Analysis Professional eCMAP Badge" class="certificate-badge blue-team" style="height:150px;width:200px"/>
+</div>
 
 ### eLearnSecurity Certified Mobile Application Penetration Tester eMAPT [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
@@ -53,23 +55,13 @@ classes: wide
 
 ## <u>DevOps</u>
 
-<img src="../assets/images/certificates/rhcsa_badge.jpg" alt="Red Hat Certified Linux Administrator Badge" class="certificate-badge devops" /> 
-<img src="../assets/images/certificates/rhce_badge.jpg" alt="Red Hat Certified Linux Engineer Badge" class="certificate-badge devops"  /> 
-<img src="../assets/images/certificates/oca_badge.png" alt="Red Hat Certified Linux Engineer Badge" class="certificate-badge devops" /> 
-<img src="../assets/images/certificates/ocp_badge.jpg" alt="Red Hat Certified Linux Engineer Badge" class="certificate-badge devops" />
+<div>
+  <img src="../assets/images/certificates/rhce_badge.jpg" alt="Red Hat Certified Linux Engineer Badge" class="certificate-badge devops"  style="height:190px;width:200px"/> 
+  <img src="../assets/images/certificates/rhcsa_badge.jpg" alt="Red Hat Certified Linux Administrator Badge" class="certificate-badge devops" style="height:180px;width:200px"/> 
+</div>
 
 ### Red Hat Certified Linux Administrator 7 [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
 
 ---
 
 ### Red Hat Certified Linux Engineer 7 [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
-
----
-
-### Oracle Certified Java 8 Association [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
-
----
-
-### Oracle Certified Java 8 Professional [<i class="fas fa-link" aria-hidden="true"></i>](https://ine.com)
-
----
