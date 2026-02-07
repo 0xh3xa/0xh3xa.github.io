@@ -10,7 +10,7 @@ tags: [picoctf, reversing]
 
 Today, we're diving into the picoCTF challenge: `Quantum Scrambler` 2025. Let's break it down step by step.
 
-![alt text](/assets/img/posts/ctf/picoctf-quantum-scrambler/ctf-image.png)
+![alt text](/assets/img/posts/cybersecurity/ctf/picoctf-quantum-scrambler/ctf-image.png)
 
 ## 📊 Challenge Overview
 

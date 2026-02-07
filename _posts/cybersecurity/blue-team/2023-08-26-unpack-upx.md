@@ -42,18 +42,18 @@ After that, I will pack the sample using the following command
 upx hello.exe -o hello-packed.exe 
 ```
 
-![loading image](/assets/img/posts/reversing/unpack-upx/create.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/create.png)
 
 
 ### Compare the packed vs. unpacked sample
 
 Let's see the file size and Portable Executable (PE) metadata of unpacked compared to packed files.
 
-![loading image](/assets/img/posts/reversing/unpack-upx/compile.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/compile.png)
 
 Now I open the two files with PeStudio for PE analyzing, let's move to sections and imports.
 
-![loading image](/assets/img/posts/reversing/unpack-upx/iat.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/iat.png)
 
 As shown in the image below the packed has different section names (UPX0, UPX1, .rsrc) unlike the unpacked one (.text,.data, .rdata).
 
@@ -64,7 +64,7 @@ Different tools help you to identify the packer exist one of them Detect-it-easy
 
 Here Detect-it-easy identify it and PeID
 
-![loading image](/assets/img/posts/reversing/unpack-upx/info.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/info.png)
 
 , But what are general things to keep in consideration when identifying the packer exists:
 
@@ -77,9 +77,9 @@ Here Detect-it-easy identify it and PeID
 4. Checking the imports with PeStudio or CFF-Explorer, you will find fewer functions are referenced.
 
 
-![loading image](/assets/img/posts/reversing/unpack-upx/entropy.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/entropy.png)
 
-![loading image](/assets/img/posts/reversing/unpack-upx/sections.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/sections.png)
 
 
 |Function|MSDN Documentation|
@@ -91,7 +91,7 @@ Here Detect-it-easy identify it and PeID
 
 5. Tail jump, which is used by the stub to jump to the virtual address at the unpacked entry point. This tail jump you will identify if you open the sample into the IDA disassembler, there is no existing `ret` instruction.
 
-![loading image](/assets/img/posts/reversing/unpack-upx/tail.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/tail.png)
 
 ### How to unpack the UPX sample?
 
@@ -109,11 +109,11 @@ Moving to the breakpoints tab, you will find breakpoints at the `ntdll.dll` and 
 
 Find the tail jump that could be found using the Graph by pressing `g` and scrolling down until find it or by converting the address from IDA into xDbg.
 
-![loading image](/assets/img/posts/reversing/unpack-upx/tail.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/tail.png)
 
-![loading image](/assets/img/posts/reversing/unpack-upx/pushad.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/pushad.png)
 
-![loading image](/assets/img/posts/reversing/unpack-upx/jmp.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/jmp.png)
 
 Once you find it, press `F2` to create a breakpoint then run `F8` for stepping over and continue running. The breakpoint will hit press `F7` to step into.
 
@@ -128,14 +128,14 @@ It points to the address of the entry point which we are stop there. Click on  I
 
 At the points there are some missing in the alignments, rather than do it manually you can use Scylla by clicking Fix dump which will extract dump_SCY.
 
-![loading image](/assets/img/posts/reversing/unpack-upx/scylla.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/scylla.png)
 
 
 Open the dump_SCY using the IDA and check the imports tab and the graph view, here is the call for the `printf()` function and print `Hello World!`
 
-![loading image](/assets/img/posts/reversing/unpack-upx/unpacked.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/unpacked.png)
 
 
 If you now check the import functions you will see more referenced functions.
 
-![loading image](/assets/img/posts/reversing/unpack-upx/modules.png)
+![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/modules.png)

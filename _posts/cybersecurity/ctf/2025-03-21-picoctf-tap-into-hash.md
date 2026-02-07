@@ -10,7 +10,7 @@ tags: [picoctf, reversing]
 
 Today, we're diving into the picoCTF challenge: `Tap into Hash` 2025. Let's break it down step by step and decrypt the given ciphertext.
 
-![alt text](/assets/img/posts/ctf/picoctf-tap-into-hash/ctf-image.png)
+![alt text](/assets/img/posts/cybersecurity/ctf/picoctf-tap-into-hash/ctf-image.png)
 
 
 ## 📊 Challenge Overview

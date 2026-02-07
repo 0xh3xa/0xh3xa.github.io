@@ -40,7 +40,6 @@ social:
     # The first element serves as the copyright owner's link
     - https://twitter.com/0xh3xa # change to your Twitter homepage
     - https://github.com/0xh3xa # change to your GitHub homepage
-    - https://0xh3xa@mastodon.social
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -152,7 +151,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "0xh3xa.com/"
 
 # ------------ The following options are not recommended to be modified ------------------
 
