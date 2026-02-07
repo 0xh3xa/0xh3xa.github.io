@@ -60,7 +60,7 @@ webmaster_verifications:
 analytics:
   google:
     id: "G-90CM0PJN5Q"
-    # anonymize_ip: true
+    anonymize_ip: true
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
@@ -120,16 +120,16 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: "0xh3xa/0xh3xa.github.io"
-    repo_id: "R_kgDORKvb-g"
-    category: "General"
-    category_id: "DIC_kwDORKvb-s4C2BB6"
-    mapping: "pathname" # optional, default to 'pathname'
-    strict: "0" # optional, default to '0'
-    input_position: "top" # optional, default to 'bottom'
+    repo: 0xh3xa/0xh3xa.github.io-Comments
+    repo_id: R_kgDORKvb-g
+    category: General
+    category_id: DIC_kwDORKvb-s4C2BB6
+    mapping: pathname # optional, default to 'pathname'
+    strict: 0 # optional, default to '0'
+    input_position: top # optional, default to 'bottom'
     lang: en # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
-    data-loading: "lazy"
+    reactions_enabled: 1 # optional, default to the value of `1`
+    data-loading: lazy
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
