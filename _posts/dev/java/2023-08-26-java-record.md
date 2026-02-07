@@ -9,9 +9,9 @@ tags: [java, record]
 ---
 
 
-Enhance the Java programming language with records. Records provide a compact syntax for declaring classes which are transparent holders for `shallowly` `immutable` data. This is a preview language feature in `JDK 14`.
+Records provide a compact syntax for declaring classes which are transparent holders for `shallowly` `immutable` data. This is a preview language feature in `JDK 14`.
 
-### What Is a Java Record? 
+## What Is a Java Record? 
 
 > One of the most common complaints about Java is that you need to write a lot of code for a class to be useful. Quite often you need to write the following: `toString()`, `hashCode()`, `equals()`, `Getter-methods` and `public constructor`
 
@@ -19,18 +19,18 @@ Enhance the Java programming language with records. Records provide a compact sy
 
 > The goal of records is to extend the Java language syntax and create a way to say that a class is “the fields, just the fields, and nothing but the fields.” By you making that statement about a class, the compiler can help by creating all the methods automatically and having all the fields participate in methods such as hashCode().
 
-### What is especial about records?
+## What is especial about records?
 
 The records come with a default implementation for `public constructor`, `hashCode()`, `equals()` and `toString()`, and accessor methods like `max`, `min` for all attributes inside the record.
 
-### What are the record's characteristics?
+## What are the record's characteristics?
 
 * Records can not be abstract
 * Records can not extends classes
 * All declared field are `private` and `final`, once you declare the records value you can not change it. Similar to tuple in Python
 
 
-### How to declare a record and use it?
+## How to declare a record and use it?
 
 From Java 14 you declare the records with a keyword `record`
 
@@ -58,7 +58,7 @@ public class Example {
 Author[id=187, name=author]
 ```
 
-### How to run and enable feature preview?
+## How to run and enable feature preview?
 
 * You can run the following command
 
@@ -70,7 +70,7 @@ javac --enable-preview -source 14 ClassName.java
 
 **File** &#8594; **Project structure** &#8594; **Project SDK** &#8594; **choose the Project language level as ‘14 (Preview) - Records, patterns, text blocks’ for your Project and Modules settings**
 
-### Compare the records with old fashion pojo class
+## Compare the records with old fashion pojo class
 
 Before you were declaring the pojo class like this, define the attributes, getter, setter, hashCode(), equals(), toString():
 
@@ -114,7 +114,7 @@ public class Author {
 record Author(int id, String name) { }
 ```
 
-### Difference between A Class and Record?
+## Difference between A Class and Record?
 
 |diff|class|record|
 |----|-----|------|
@@ -123,11 +123,11 @@ record Author(int id, String name) { }
 |Implement|interface|interface|
 |can be abstract|Yes|No|
 
-### What is the default implementation of hashCode()?
+## What is the default implementation of hashCode()?
 
 The record will use the hash code of all attributes inside the record
 
-### What is the default implementation of equals()?
+## What is the default implementation of equals()?
 
 The record will use all attributes to decide if tow records are equals or not
 

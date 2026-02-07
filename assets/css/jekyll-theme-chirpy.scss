@@ -27,5 +27,11 @@
     color-scheme: dark;
     background-color: #151718 !important;
     color: #e0e0e0 !important;
+
+    @import './monokai-theme.scss';
   }
+}
+
+.rouge-code {
+  color: #e0e0e0 !important;
 }

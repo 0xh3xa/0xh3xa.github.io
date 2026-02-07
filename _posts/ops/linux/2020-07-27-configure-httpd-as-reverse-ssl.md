@@ -10,16 +10,14 @@ tags:
     [apache2, tomcat, ssl]
 ---
 
-## Apache-http-reverse-proxy with SSL Certificate
-
-### What is Let's Encrypt?
+## What is Let's Encrypt?
 
 Let’s Encrypt is a free, automated, and open certificate authority (CA), run for the public’s benefit. It is a service provided by the Internet Security Research Group (ISRG).
 We give people the digital certificates they need in order to enable HTTPS (SSL/TLS) for websites, for free, in the most user-friendly way we can. We do this because we want to create a more secure and privacy-respecting Web, for more info: [https://letsencrypt.org](https://letsencrypt.org)
 
 <img src="https://letsencrypt.org/images/le-logo-twitter-noalpha.png" width="400" height="400" alt="let's encrypt"/>
 
-### Steps for the configuration
+## Steps for the configuration
 
 1. Install and configure Let's encrypt with apache-httpd
 

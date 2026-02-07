@@ -9,11 +9,11 @@ categories: [Cybersecurity, Blue_Team]
 tags: [assembly, reversing]
 ---
 
-### Why should you learn Assembly?
+## Why should you learn Assembly?
 
 Learning Assembly language is an essential skill, particularly in cybersecurity fields such as malware analysis, reverse engineering, and exploit development. However, its benefits extend far beyond cybersecurity. Understanding Assembly helps you grasp how the underlying layers of a computer work covering topics like memory layout, system calls, input/output (I/O) operations, and function subroutines. This deeper insight improves your ability to visualize and reason about how programs work, whether they are simple scripts or complex systems. Gaining this foundational knowledge can significantly enhance your overall programming skills before you dive into more advanced topics.
 
-### How to start?
+## How to start?
 
 Here are my recommendations for beginners to get started with x86 Assembly language.
 

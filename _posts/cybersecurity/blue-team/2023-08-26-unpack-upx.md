@@ -8,7 +8,7 @@ categories: [Cybersecurity, Blue_Team]
 tags: [reversing]
 ---
 
-### What is UPX packer?
+## What is UPX packer?
 
 UPX is an open-source, free, secure, portable, extendable, high-performance executable packer for several executable formats.
 
@@ -16,7 +16,7 @@ The purpose of the packer is to reduce the file size of programs and DLLs reduci
 
 In addition to UPX packer, other packers could be commercials and close sources exist like ASpack, ASProtect, AutoIT, DarkCrypt, AvPack, and many more.
 
-### How to pack the sample using the UPX packer?
+## How to pack the sample using the UPX packer?
 
 You can download it from the GitHub repo [https://github.com/upx/upx/releases](https://github.com/upx/upx/releases) and select the appropriate one for your operating system.
 
@@ -45,7 +45,7 @@ upx hello.exe -o hello-packed.exe
 ![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/create.png)
 
 
-### Compare the packed vs. unpacked sample
+## Compare the packed vs. unpacked sample
 
 Let's see the file size and Portable Executable (PE) metadata of unpacked compared to packed files.
 
@@ -58,7 +58,7 @@ Now I open the two files with PeStudio for PE analyzing, let's move to sections 
 As shown in the image below the packed has different section names (UPX0, UPX1, .rsrc) unlike the unpacked one (.text,.data, .rdata).
 
 
-### How to identify the UPX packing exists?
+## How to identify the UPX packing exists?
 
 Different tools help you to identify the packer exist one of them Detect-it-easy and PeID tools.
 
@@ -93,7 +93,7 @@ Here Detect-it-easy identify it and PeID
 
 ![loading image](/assets/img/posts/cybersecurity/blue-team/unpack-upx/tail.png)
 
-### How to unpack the UPX sample?
+## How to unpack the UPX sample?
 
 Two options are using the command line and other manually using the xDbg debugger.
 

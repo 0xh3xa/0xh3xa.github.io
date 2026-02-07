@@ -9,12 +9,10 @@ tags: [gcp, ssh, mfa, troubleshooting]
 ---
 
 
-# Introduction
-
 Multi-Factor Authentication (MFA) enhances security, but in emergency situations, you might find yourself locked out of your Google Cloud Platform (GCP) Compute Engine instance. If you're unable to log in due to MFA issues, you can temporarily disable it using a startup script. This guide explains how to do that safely.
 
 
-# Steps to Disable MFA and Regain Access
+## Steps to Disable MFA and Regain Access
 
 If your Compute Engine instance enforces MFA for SSH authentication, you can disable it by modifying the PAM configuration. Follow these steps:
 
@@ -47,7 +45,7 @@ Once the script is added, restart your Compute Engine instance:
 After the VM restarts, MFA will be disabled, allowing you to log in via SSH without being prompted for an authentication code.
 
 
-# Re-enabling MFA After Login
+## Re-enabling MFA After Login
 
 Once you regain access, it is recommended to re-enable MFA to maintain security. You can do so by removing the comment (#) from the pam_google_authenticator.so line in /etc/pam.d/sshd and restarting the SSH service:
 
@@ -56,7 +54,7 @@ sudo sed -i '/#.*pam_google_authenticator.so/s/^#//' /etc/pam.d/sshd
 sudo systemctl restart sshd
 ```
 
-# Conclusion
+## Conclusion
 
 This method provides a quick way to regain access to a GCP Compute Engine instance when MFA prevents login. However, MFA should only be disabled temporarily, and security best practices should be followed to minimize risks.
 
