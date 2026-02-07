@@ -1,16 +1,23 @@
-<script
-  src="https://giscus.app/client.js"
-  data-repo="0xh3xa/0xh3xa.github.io-Comments"
-  data-repo-id="R_kgDORKvb-g"
-  data-category="General"
-  data-category-id="DIC_kwDORKvb-s4C2BB6"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="top"
-  data-theme="dark"
-  data-lang="en"
-  crossorigin="anonymous"
-  async
-></script>
+{% assign provider = site.comments.provider | default:"disqus" %}
+{% if provider == "disqus" %}
+{% assign disqus = site.disqus | default:site.disqus_shortname %}
+{% if disqus %}
+<!-- original disqus codes -->
+{% endif %}
+{% elsif provider == "utterances" %}
+{% assign utterances = site.utterances %}
+{% if utterances.repo %}
+<script src="https://utteranc.es/client.js" repo={{ utterances.repo }} issue-term={{ utterances.issue-term }} label={{
+  utterances.label }} theme={{ utterances.theme }} crossorigin="anonymous" async>
+  </script>
+{% endif %}
+{% elsif provider == "giscus" %}
+{% assign giscus = site.giscus %}
+{% if giscus.repo %}
+<script src="https://giscus.app/client.js" data-repo={{ giscus.repo }} data-repo-id={{ giscus.repo-id }}
+  data-category={{ giscus.category }} data-category-id={{ giscus.category-id }} data-mapping={{ giscus.mapping }}
+  data-reactions-enabled={{ giscus.reaction-enabled }} data-theme={{ giscus.theme }} data-loading={{ giscus.data-loading
+  }} crossorigin={{ giscus.crossorigin }} async>
+  </script>
+{% endif %}
+{% endif %}
