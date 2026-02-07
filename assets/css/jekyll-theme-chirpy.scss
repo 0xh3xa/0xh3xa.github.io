@@ -1,0 +1,26 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+#sidebar #avatar {
+  width: 10rem !important;
+  height: 10rem !important;
+}
+
+#avatar img {
+  width: 100%;
+  height: auto;
+}
+
+// #main-wrapper,
+// #tail-wrapper footer {
+//   background-color: #151718 !important;
+// }
