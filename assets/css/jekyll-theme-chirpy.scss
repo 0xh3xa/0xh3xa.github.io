@@ -20,7 +20,12 @@
   height: auto;
 }
 
-// #main-wrapper,
-// #tail-wrapper footer {
-//   background-color: #151718 !important;
-// }
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]) #main-wrapper,
+  html:not([data-mode]) #tail-wrapper footer {
+    color-scheme: dark;
+    background-color: #151718 !important;
+    color: #e0e0e0 !important;
+  }
+}
