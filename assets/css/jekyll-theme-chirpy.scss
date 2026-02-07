@@ -24,9 +24,15 @@
 @media (prefers-color-scheme: dark) {
   html:not([data-mode]) #main-wrapper,
   html:not([data-mode]) {
+    @import './monokai-theme.scss';
+    color: #e0e0e0 !important;
+
     #tail-wrapper footer {
       color-scheme: dark;
       background-color: #151718 !important;
+    }
+
+    .rouge-code {
       color: #e0e0e0 !important;
     }
 
@@ -68,10 +74,6 @@
       color: #b0b0b0;
     }
   }
-}
-
-.rouge-code {
-  color: #e0e0e0 !important;
 }
 
 blockquote {
