@@ -3,7 +3,7 @@ title: "Accessing a GCP Compute Engine Instance After MFA Lockout"
 description: "Steps to regain access to a Compute Engine instance when locked out due to MFA issues."
 date: March 19, 2025
 image:
-  path: /assets/img/thumbnails/cloud.png
+  path: /assets/img/thumbnails/gcp.png
 categories: [Ops, Cloud]
 tags: [gcp, ssh, mfa, troubleshooting]
 ---
