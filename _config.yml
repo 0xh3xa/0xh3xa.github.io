@@ -131,7 +131,7 @@ comments:
     reactions_enabled: "1" # optional, default to the value of `1`
     theme: "dark"
     crossorigin: "anonymous"
-    data_loading: lazy
+    # data_loading: lazy
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
