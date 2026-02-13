@@ -3,7 +3,7 @@ title: "Scheduling a GitHub Action to Run at Midnight on Branch Changes"
 Description: "Guide to configuring a GitHub Action scheduler for midnight execution on branch changes."
 date: February 14, 2025
 image:
-  path: /assets/img/thumbnails/github-action.png
+  path: /assets/img/thumbnails/github-actions.png
 categories: [Ops, DevOps]
 tags: [gitHub_actions]
 ---

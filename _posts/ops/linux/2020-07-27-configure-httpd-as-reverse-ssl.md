@@ -4,10 +4,8 @@ description: "Step-by-step guide to configuring Apache HTTPd as a reverse proxy 
 date: July 27, 2020
 image:
   path: /assets/img/thumbnails/linux.png
-categories:
-    [Ops, Linux]
-tags:
-    [apache2, tomcat, ssl]
+categories: [Ops, Linux]
+tags: [apache2, tomcat, ssl]
 ---
 
 ## What is Let's Encrypt?
