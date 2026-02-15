@@ -5,7 +5,7 @@ date: February 18, 2025
 image:
   path: /assets/img/thumbnails/assembly.png
 ribbon: DodgerBlue
-categories: [Cybersecurity, Blue_Team]
+categories: [Cybersecurity, Blue Team]
 tags: [assembly, reversing]
 ---
 

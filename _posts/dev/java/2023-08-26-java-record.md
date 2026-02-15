@@ -4,8 +4,8 @@ description: "An introduction to Java Records introduced in JDK 14."
 date: July 27, 2020
 image:
   path: /assets/img/thumbnails/java.png
-categories: [Dev]
-tags: [java, record]
+categories: [Dev, Java]
+tags: [record]
 ---
 
 

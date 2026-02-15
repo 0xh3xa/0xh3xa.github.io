@@ -4,7 +4,7 @@ description: "A beginner's guide to learning Assembly language."
 date: February 18, 2025
 image:
   path: /assets/img/thumbnails/assembly.png
-categories: [Cybersecurity, Blue_Team]
+categories: [Cybersecurity, Blue Team]
 tags: [reversing]
 ---
 

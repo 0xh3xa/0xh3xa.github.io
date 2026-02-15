@@ -4,7 +4,7 @@ description: "A quick overview of the process for unpacking the UPX packer."
 date: August 26, 2023
 image:
   path: /assets/img/posts/cybersecurity/blue-team/unpack-upx/upx.png
-categories: [Cybersecurity, Blue_Team]
+categories: [Cybersecurity, Blue Team]
 tags: [reversing]
 ---
 
