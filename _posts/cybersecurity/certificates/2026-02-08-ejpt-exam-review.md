@@ -115,4 +115,4 @@ The eJPT course and exam are valuable and information-dense, but passing the exa
 
 If you’re a student or someone aiming to enter cybersecurity, I highly recommend the eJPT. INE frequently offers discounted bundles that include fundamentals training, premium subscriptions, and additional learning paths.
 
-**Bottom line:** eJPT won’t make you an expert, but it will put you on the right path.
+> **Bottom line:** eJPT won’t make you an expert, but it will put you on the right path.
